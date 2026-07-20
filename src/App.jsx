@@ -1,11 +1,12 @@
-import './App.css'
-import AppRoutes from './routes/AppRoutes'
+import AppRoutes from "./routes/AppRoutes";
+import { Suspense } from "react";
 
 function App() {
-
   return (
-    < AppRoutes />
-  )
+    <Suspense fallback={<p>Loading page...</p>}>
+      <AppRoutes />
+    </Suspense>
+  );
 }
 
-export default App
+export default App;

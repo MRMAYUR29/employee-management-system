@@ -1,5 +1,21 @@
+import { NavLink } from "react-router-dom";
+
 export default function Sidebar() {
-    return(
-        <h1>Sidebar</h1>
-    )
+  return (
+    <aside>
+      <nav>
+        <NavLink to="/dashboard">
+          Dashboard
+        </NavLink>
+
+        <NavLink to="/dashboard/employees">
+          Employees
+        </NavLink>
+
+        <NavLink to="/dashboard/profile">
+          Profile
+        </NavLink>
+      </nav>
+    </aside>
+  );
 }
